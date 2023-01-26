@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+
+.login-button-area{
+  display: flex;
+  justify-content: space-between;
+}
+.login-button{
+  display: flex;
+  margin: 20px;
+}
+.login-button:hover{
+  cursor: pointer;
+}
+.nav-section{
+  display: flex;
+  justify-content: center;
+}
+.menu-list{
+  display: flex;
+  justify-content: center;
+}
+.menu-list li{
+  list-style-type: none;
+  margin: 10px;
+}
+.menu-area{
+  display: flex;
+  justify-content: center;
+}
+.input{
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input:focus{
+  outline: none;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-area{
+  position:relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-icon{
+  position: absolute;
+  bottom: 11px;
+}
+.search-area-mother{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.img-area{
+  width: 100%;
+}
+.each-card-area:hover{
+  transform:scale(1.1);
+  transition-duration: 500ms;
+}
+.product-detail-text-area div{
+  margin-bottom: 15px;
+}
+.product-detail-button-area div{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.nav-img-area:hover{
+  cursor: pointer;
+}
+.mobile-menu-button{
+  visibility:hidden;
+  margin: 20px;
+}
+.mobile-menu-button:hover
+{
+  cursor: pointer;
+}
+.mobile-menu-area{
+  position:fixed;
+  width: 230px;
+  background-color: burlywood;
+  height: 100%;
+  transition: 0.5s;
+}
+.mobile-close-button-control{
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-close-button:hover{
+  cursor: pointer;
+}
+.mobile-menu-list{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
+}
+.mobile-menu-list li{
+  display: flex;
+  list-style-type: none;
+  margin-top: 10px;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+	.menu-list{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .mobile-menu-button{
+    visibility:visible
   }
+  .nav-img-area{
+    margin-bottom: 30px;
+  }
+  .search-area{
+    display: none;
+  }
+  
 }
